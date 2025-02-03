@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html lang="uk" style= "margin:0; padding:0; overflow-x:hidden;">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-
-       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>darkman</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        .iframe-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            transform: scale(1.2); /* Збільшує масштаб вмісту iframe */
+            transform-origin: 0 0; /* Зміщення від точки (0,0) */
+        }
+    </style>
 </head>
 <body>
-<!-- <iframe src="https://vtdev12.wixsite.com/darkman" style="position:fixed; width:100vw;top:-51px; left:0px; overflow:hidden;border:none;height:108%;">
-  </iframe>   -->
-
-
-    <iframe src="https://vtdev12.wixsite.com/my-site-1" style="position:fixed; width:100vw;top:-51px; left:0px; overflow:hidden;border:none;height:108%;">
-  </iframe>  
- 
-   
-
-
+    <div class="iframe-container">
+        <iframe src="https://vtdev12.wixsite.com/darkman" frameborder="0"></iframe>
+    </div> 
 </body>
 </html>
 
